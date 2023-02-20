@@ -1,0 +1,54 @@
+/* defaults */
+:root {
+    --accent: #626a53;
+    --accent-light: #bdc09a;
+    --light-grey: #f1f1f1;
+    --white: #fff;
+    --black: #000;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Styling starts here */
+
+.top-nav {
+    align-items: center;
+    padding: 20px 20px;
+    background-color: var(--accent);
+    display: flex;
+    gap: 5em;
+    justify-content: space-between;
+}
+
+.site-logo {
+    height: 1.5em;
+    width: 1.5em;
+}
+
+.link:link, .link:visited {
+    margin: 0 15px;
+    display: inline-block;
+    color: var(--white);
+    text-decoration: none;
+}
+
+.button {
+    border: 0;
+    outline: 0;
+    margin: 0 5px;
+    padding: 0.5em 2em;
+    background-color: var(--accent-light);
+    color: var(--black);
+    border-radius: 2em;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 0.75em;
+}
