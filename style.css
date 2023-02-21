@@ -1,13 +1,15 @@
 /* defaults */
 :root {
+    scroll-behavior: smooth;
     --accent: #626a53;
     --accent-light: #bdc09a;
+    --accent-dark: #3e4334;
     --light-grey: #f1f1f1;
+    --light-text: #777;
     --white: #fff;
     --black: #000;
     --grey: #919191;
     --header: 'Roboto', sans-serif;
-    scroll-behavior: smooth;
     --border: 2px solid red;
     --normal-shadow: 0 5px 5px rgba(0,0,0,0.25);
     --scaled-shadow: 0 8px 15px rgba(0,0,0,0.2);
@@ -110,7 +112,7 @@ body {
 .search-bar {
     width: 100%;
     max-width: 700px;
-    background-color: white;
+    background-color: var(--white);
     padding: 10px 20px;
     display: flex;
     align-items: center;
@@ -154,14 +156,14 @@ body {
 .about-us {
     background-color: var(--accent);
     text-align: center;
-    color: white;
+    color: var(--white);
     padding: 50px;
 }
  .about-us h2 {
     margin-bottom: 50px;
  }
 
- /* Category section */
+ /* Categories section */
 
  .categories {
     display: flex;
@@ -236,3 +238,81 @@ body {
     grid-template-columns: 1fr;
     }
 }
+
+/* experts section */
+
+.experts {
+    padding: 50px 0;
+    background-color: var(--light-grey);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cards {
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    gap: 50px;
+}
+.card-container {
+    width: 250px;
+  /*   border: 1px solid black; */
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    background: var(--accent); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  .card-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid var(--white);
+    margin: 20px 0 30px;
+    padding: 5px;
+  }
+  .card-image img {
+    width: 100%;
+    border-radius: inherit;
+    height: 100%;
+    
+  }
+  .card-content {
+    padding: 10px;
+    width: 100%;
+    background: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card-content .expert-name{
+    color: var(--accent);
+    font-size: 16px;
+    margin: 5px 0 2px;
+  }
+  .card-content .designation {
+    color: var(--light-text);
+    font-size: 14px;
+    font-weight: 100;
+    margin-bottom: 30px;
+  }
+  .card-content .card-btn {
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    border: none;
+    background: var(--accent);
+    color: var(--white);
+    border-radius: 20px;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: all 300ms ease; 
+  }
+  .card-btn:hover {
+    background: var(--accent-dark);
+    opacity: 1;
+  }
