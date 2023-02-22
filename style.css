@@ -68,8 +68,12 @@ body {
     color: var(--black);
     border-radius: 2em;
     cursor: pointer;
-    font-weight: bold;
     font-size: 0.75em;
+    transition: all 200ms ease;
+}
+.button:hover {
+  background-color: orangered;
+  color: white;
 }
 
 /* Hero section */
@@ -315,4 +319,63 @@ body {
   .card-btn:hover {
     background: var(--accent-dark);
     opacity: 1;
+  }
+
+  /* Testimonials section */
+
+  .testimonials {
+    padding: 50px;
+  }
+  .testimonials h2 {
+    text-align: center;
+  }
+  .testimonials span {
+    color: rgb(248, 84, 19);
+  }
+  .testimonial {
+    margin: 100px 0;
+    display: flex;
+    align-items: center;
+  }
+  .testimonial-quote {
+    background: #fff;
+    text-align: center;
+    width: 100%;
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 230px 20px 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    position: relative;
+    color: var(--grey);
+  }
+  .testimonial-quote h4 {
+    margin: 20px 0;
+    color: #666;
+  }
+
+  .testimonial-image {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    border-radius: 5px;
+    width: 200px;
+    height: 266px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  /*   border: 1px solid red; */
+  }
+  .testimonial:nth-child(odd) .testimonial-quote {
+    padding: 20px 20px 20px 230px;
+  }
+  .testimonial:nth-child(odd) .testimonial-image {
+    left: 10px;
+  }
+
+  .testimonial-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
   }
