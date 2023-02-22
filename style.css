@@ -6,6 +6,7 @@
     --accent-dark: #3e4334;
     --light-grey: #f1f1f1;
     --light-text: #777;
+    --mild-text: #444;
     --white: #fff;
     --black: #000;
     --grey: #919191;
@@ -14,6 +15,7 @@
     --normal-shadow: 0 5px 5px rgba(0,0,0,0.25);
     --scaled-shadow: 0 8px 15px rgba(0,0,0,0.2);
     --normal: all 500ms ease;
+
 }
 
 *,
@@ -52,7 +54,7 @@ body {
     width: 1.5em;
 }
 
-.link:link, .link:visited {
+.nav-link:link, .nav-link:visited {
     margin: 0 15px;
     display: inline-block;
     color: var(--white);
@@ -194,7 +196,7 @@ body {
     transition: var(--normal);
  }
  .category-container:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
     box-shadow: var(--scaled-shadow);
 }
 .cat-img-wrapper {
@@ -270,6 +272,12 @@ body {
     flex-direction: column;
     align-items: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 300ms ease;
+  }
+  .card-container:hover,
+  .card-container:focus {
+    transform: scale(1.03);
+    box-shadow: var(--scaled-shadow);
   }
   .card-image {
     width: 200px;
@@ -378,4 +386,164 @@ body {
     width: 100%;
     height: auto;
     object-fit: cover;
+  }
+
+  /* Specialities section */
+
+  .speciality {
+    max-width: 90%;
+    height: 300px;
+    margin: 50px auto 0;
+    display: flex;
+    background-color: #353835;
+    justify-content: space-between;
+    box-shadow: var(--normal-shadow);
+  }
+  
+  .speciality-content {
+    padding: 40px 50px;
+    color: white;
+    
+  }
+  .list-marker .award {
+    margin-right: 3px;
+    font-size: 20px;
+  }
+
+  .links {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .speciality-content h3 {
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    font-weight: normal;
+    color: #eee;
+    line-height: 1.3
+  }
+  
+  .speciality-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  width: 40%;
+  overflow: hidden;
+  }
+  
+  .speciality-img  img{
+    width: 100%;
+  /*   transform: translateY(-50px); */
+    object-fit: cover;
+  }
+  .lists {
+    margin: 0;
+    padding: 10px;
+  }
+  .list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 15px;
+    margin-bottom: 15px;
+    /* border: 1px solid red; */
+  }
+  .list-marker i{
+    display: inline;
+    /* border: 1px solid white; */
+  }
+  .list h5{
+    font-size: 12px;
+    margin: 0;
+    /* border: 1px solid yellow; */
+  }
+  .list p {
+    font-size: 11px;
+    margin: 0;
+    color: #ddd;
+  }
+
+  /* Sign up today text */
+
+  .signup-today {
+    width: 90%;
+    padding: 50px 0;
+    margin-inline: auto;
+    text-align: center;
+    color: var(--mild-text);
+    background-color: var(--light-grey);
+  }
+
+  /* Footer section */
+
+  .footer {
+    overflow: hidden;
+    max-width: 90%;
+    background-color: #353835;
+    color: white;
+    margin: 0 auto 50px;
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: var(--normal-shadow);
+  }
+  ul {
+    list-style-type: none;
+  } 
+  .footer div h3 {
+    margin-bottom: 20px;
+  }
+  .footer-links li,
+  .footer-links li a:link,
+  .footer-links li a:visited  {
+    font-size: 12px;
+    color: white;
+  }
+  
+  div:not(.ft-social) .footer-links li a {
+    position: relative;
+  }
+
+  div:not(.ft-social) .footer-links li a::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: orangered;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: width 300ms ease; 
+  }
+
+  div :not(.ft-social) .footer-links li:hover a::after {
+    width: 100%;
+    color: orangered;
+  }
+
+  .ft-social .footer-links li a:hover,
+  .ft-social .footer-links li a:focus {
+    color: #aaa;
+  }
+
+  .newsletter {
+    padding: 0 0 0 5px;
+    background: white;
+  }
+  .newsletter .email-input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+  }
+  .newsletter .subscribe {
+    padding: 5px 10px;
+    height: 100%;
+    background: #ddd;
+    color: var(--mild-text);
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  ::placeholder {
+    color: var(--light-text);
   }
