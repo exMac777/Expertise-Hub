@@ -1,7 +1,7 @@
 /* defaults */
 :root {
     scroll-behavior: smooth;
-    --accent: #626a53;
+    --accent: #353835;
     --accent-light: #bdc09a;
     --accent-dark: #3e4334;
     --light-grey: #f1f1f1;
@@ -116,7 +116,8 @@ body {
 }
 
 .search-bar {
-    width: 100%;
+    width: 95%;
+    margin-inline: auto;
     max-width: 700px;
     background-color: var(--white);
     padding: 10px 20px;
@@ -156,18 +157,6 @@ body {
 .search-bar button i {
     margin-left: 15px;
 }
-
-/* About us section */
-
-.about-us {
-    background-color: var(--accent);
-    text-align: center;
-    color: var(--white);
-    padding: 50px;
-}
- .about-us h2 {
-    margin-bottom: 50px;
- }
 
  /* Categories section */
 
@@ -388,6 +377,20 @@ body {
     object-fit: cover;
   }
 
+  /* About us section */
+
+.about-us {
+  width: 90%;
+  margin-inline: auto;
+  background-color: var(--accent);
+  text-align: center;
+  color: var(--white);
+  padding: 50px;
+}
+.about-us h2 {
+  margin-bottom: 50px;
+}
+
   /* Specialities section */
 
   .speciality {
@@ -508,7 +511,7 @@ body {
   div:not(.ft-social) .footer-links li a::after {
     content: '';
     width: 0;
-    height: 2px;
+    height: 1.5px;
     background: orangered;
     position: absolute;
     left: 0;
