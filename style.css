@@ -39,19 +39,11 @@ body {
   font-family: "oxygen", sans-serif;
 }
 
-.hero {
-  min-height: 700px;
-  padding: 0 20px;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
-    url("/Images/hero-image.jpg");
-
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.topmost {
+  background: rgb(31, 31, 31);
+  background-image: linear-gradient(to bottom right, rgb(16, 16, 16), rgb(37, 37, 37), rgb(16, 16, 16));
+  padding: 20px 20px 30px;
+  border-bottom: 1px inset rgb(70, 70, 70);
 }
 .main-logo {
   width: 60px;
@@ -60,7 +52,7 @@ body {
 
 .top-nav {
   display: flex;
-  padding: 20px 0;
+  /* padding: 20px 0; */
   width: 100%;
   justify-content: space-between;
   align-items: flex-end;
@@ -100,7 +92,7 @@ body {
   font-size: 12px;
 
   padding: 5px 10px;
-  border-radius: 3px;
+  /* border-radius: 3px; */
   border-bottom-width: 3px;
 
   color: white;
@@ -108,22 +100,95 @@ body {
   background: transparent;
 
   cursor: pointer;
-  transition: all 200ms ease-out, transform 200ms ease;
+  transition: all 300ms ease;
 }
 .log-sign button:hover {
-  color: white;
-  background: #268953;
+  color: black;
+  background: white;
   border-color: transparent;
 }
 .log-sign button:active {
-  transform: scale(0.98);
+  transform: scale(0.96);
 }
+
+.slogan {
+  margin: 50px 0 20px;
+  color: white;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 48px;
+  font-weight: 100;
+}
+.bold-text {
+  font-weight: 400;
+}
+
 .search-icon {
-  height: 100%;
+  height: auto;
   width: 15px;
-  margin-right: 10px;
+  margin-inline: 10px;
   background: transparent;
 }
+.search-field {
+  margin-inline: auto;
+  width: 30%;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 4px;
+  transition: all 250ms ease;
+}
+.field:focus {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.field {
+  /* outline: 1px dashed #ff0000; */
+  background: transparent;
+  color: black;
+  border: none;
+  width: 100%;
+  padding-inline: 5px;
+}
+.submit-btn {
+  width: 70px;
+  height: 100%;
+  padding: 5px 10px;
+  border: none;
+  margin-left: auto;
+  background: black;
+  color: white;
+  cursor: pointer;
+  outline-offset: -1px;
+  outline: 1px solid white;
+  transition: all 300ms ease;
+}
+.submit-btn:hover {
+  background: rgb(56, 56, 56);
+}
+
+/* Hero section starts here */
+
+
+
+
+.hero {
+  min-height: 700px;
+  padding: 0 20px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
+    url("/Images/hero-image.jpg");
+
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 
 @media (max-width: 720px) {
   .top-nav {
@@ -151,63 +216,6 @@ body {
   }
 }
 
-.search-bar {
-  padding-left: 10px;
-  width: 50%;
-  height: clamp(30px, 40px, 50px);
-  margin: auto 0;
-  align-self: center;
-  background: linear-gradient(to top, #dfdfdf, rgba(255, 255, 255, 0.9));
-
-  position: relative;
-  display: flex;
-  align-items: center;
-  border-radius: 6px;
-}
-
-.search-bar .bar {
-  display: flex;
-  align-items: center;
-  flex: 80%;
-}
-
-.bar input {
-  width: 100%;
-  border: 0;
-  outline: 0;
-  background: none;
-}
-
-.bar input::placeholder {
-  font-size: 14px;
-  color: #8e8e8e;
-  font-weight: 100;
-  letter-spacing: 2;
-}
-.sub-btn {
-  height: 100%;
-
-  display: grid;
-  place-items: center;
-  flex: 20%;
-  padding: 0;
-  margin: 0;
-
-  background: #3cb371;
-  transition: all 200ms ease;
-}
-.sub-btn:hover {
-  background: #349d64;
-}
-.sub-btn button {
-  width: 100%;
-  color: white;
-  outline: none;
-  border: none;
-  height: 100%;
-  background: none;
-  cursor: pointer;
-}
 .taglines {
   color: white;
   font-size: 2rem;
