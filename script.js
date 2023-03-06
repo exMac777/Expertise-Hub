@@ -1,10 +1,21 @@
 const searchInput = document.getElementsByClassName("field")[0];
 const searchField = document.getElementsByClassName("search-field")[0];
+let isInputFocused = false;
 
 searchInput.addEventListener("focus", () => {
-  searchField.style.width = "50%"; /* set container width to a larger value */
+  isInputFocused = true;
+  if (isInputFocused) {
+    searchField.style.width = "50%";
+  }
 });
 
 searchInput.addEventListener("blur", () => {
-  searchField.style.width = "30%"; /* set container width back to the original value */
+  isInputFocused = false;
+  if (!isInputFocused) {
+    searchField.style.width = "30%";
+  }
 });
+
+
+
+

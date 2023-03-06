@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Expertise Hub</title>
 
+
   <!-- For using google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,21 +15,33 @@
     href="https://fonts.googleapis.com/css2?family=Assistant:wght@200&family=Inter:wght@100;200;300;400;500&family=Oxygen:wght@300;400&family=Poppins:wght@100;200;300;400;500&family=Roboto:wght@100;300;400&display=swap"
     rel="stylesheet">
 
+
   <!-- For using font awesome icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
     integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+
   <!-- Local style sheet -->
   <link rel="stylesheet" href="style.css" />
+
 
   <!-- local script file -->
   <script defer src="script.js"></script>
 </head>
 
+
+
 <body>
+
+
+
+
+
   <!-- Top Navigation -->
+
   <div class="topmost">
+
     <nav class="top-nav">
       <img src="Exhub_logo.png" alt="logo" class="main-logo">
       <div class="nav-links">
@@ -36,12 +49,11 @@
         <a href="#categories" class="nav-link">Categories</a>
         <a href="#experts" class="nav-link">Experts</a>
         <a href="#testimonials" class="nav-link">Testimonials</a>
-        <a href="#about-us" class="nav-link">About&nbsp;us</a>
-        <a href="#" class="nav-link">Blogs</a>
+        <a href="/aboutUs.html" class="nav-link">About&nbsp;us</a>
+        <a href="/blogs.html" class="nav-link">Blogs</a>
       </div>
       <div class="log-sign">
         <button type="button" class="button login">LOGIN</button>
-        <!-- <button type="button" class="button signup">SIGN&nbsp;UP</button> -->
       </div>
     </nav>
 
@@ -49,95 +61,60 @@
 
     <form action="https://google.com/search" method="get" class="search-field">
       <img src="search-icon.png" alt="Search icon" class="search-icon">
-      <input class="field" type="search" placeholder="e.g. Engineering" name="q" />
-      <button type="button" class="submit-btn">Browse</button>
+      <input class="field" type="search" placeholder="e.g. Fashion Designing" name="q" />
+      <button type="submit" class="submit-btn">Browse</button>
     </form>
+
   </div>
 
-  <!-- Hero -->
+
+
+
+
+
+  <!-- Hero  image-->
+
   <div class="hero">
+    <img src="/Images/hero-image.jpg" alt="Hero image" class="hero-image">
   </div>
 
 
-  <!-- Categories -->
 
-  <div class="categories" id="categories">
-    <h2>Categories</h2>
-    <div class="category-wrapper">
-      <div class="category-container">
-        <div class="cat-img-wrapper">
-          <img src="/Images/engineering.jpg" alt="engineering" class="cat-img" />
-        </div>
-        <h3 class="category-name">Engineering</h3>
-      </div>
-      <div class="category-container">
-        <div class="cat-img-wrapper">
-          <img src="/Images/medicine.jpg" alt="medicine" class="cat-img" />
-        </div>
-        <h3 class="category-name">Medicine</h3>
-      </div>
-      <div class="category-container">
-        <div class="cat-img-wrapper">
-          <img src="/Images/technology.jpg" alt="technology" class="cat-img" />
-        </div>
-        <h3 class="category-name">Technology</h3>
-      </div>
-      <div class="category-container">
-        <div class="cat-img-wrapper">
-          <img src="/Images/construction.jpg" alt="construction" class="cat-img" />
-        </div>
-        <h3 class="category-name">Construction</h3>
-      </div>
-      <div class="category-container">
-        <div class="cat-img-wrapper">
-          <img src="/Images/art.jpg" alt="art" class="cat-img" />
-        </div>
-        <h3 class="category-name">Art</h3>
-      </div>
-      <div class="category-container">
-        <div class="cat-img-wrapper">
-          <img src="/Images/cyber-security.jpg" alt="cyber security" class="cat-img" />
-        </div>
-        <h3 class="category-name">Cyber Security</h3>
-      </div>
-    </div>
-    <div class="btn">
-      <button type="button" class="action-btn">LOAD MORE</button>
-    </div>
-  </div>
+
+
 
   <!-- Experts -->
 
-  <div class="experts" id="experts">
-    <h2>Experts</h2>
+  <div id="experts" class="experts parent-div">
+    <h2 class="section-header">Top recommended experts</h2>
     <div class="cards">
       <div class="card-container">
         <div class="card-image">
-          <img src="/Images/experts/mahesh.jpg" alt="Maheshwor Nagarkoti">
+          <img src="/Images/experts/yusuf_hakimi.jpg" alt="Yusuf Hakimi">
         </div>
         <div class="card-content">
-          <h3 class="expert-name">Maheshwor Nagarkoti</h3>
-          <h4 class="designation">Front End Developer</h3>
+          <h3 class="expert-name">Yusuf Hakimi</h3>
+          <h4 class="designation">Photographer</h3>
             <button type="button" class="card-btn">View Profile</button>
         </div>
       </div>
       <div class="card-container">
         <div class="card-image">
-          <img src="/Images/experts/sujal.jpg" alt="Sujal Shrestha">
+          <img src="/Images/experts/tyra_banks.jpg" alt="Tyra Banks">
         </div>
         <div class="card-content">
-          <h3 class="expert-name">Sujal Shrestha</h3>
-          <h4 class="designation">Back End Developer</h3>
+          <h3 class="expert-name">Tyra Banks</h3>
+          <h4 class="designation">Graffiti Artist</h3>
             <button type="button" class="card-btn">View Profile</button>
         </div>
       </div>
       <div class="card-container">
         <div class="card-image">
-          <img src="/Images/experts/biplob.jpg" alt="Biplob Lamichhane">
+          <img src="/Images/experts/emily_johanson.jpg" alt="Emily Johanson">
         </div>
         <div class="card-content">
-          <h3 class="expert-name">Biplob Lamichhane</h3>
-          <h4 class="designation">UI/UX Designer</h3>
+          <h3 class="expert-name">Emily Johanson</h3>
+          <h4 class="designation">Software Engineer</h3>
             <button type="button" class="card-btn">View Profile</button>
         </div>
       </div>
@@ -147,17 +124,18 @@
         </div>
         <div class="card-content">
           <h3 class="expert-name">Anna Yevette</h3>
-          <h4 class="designation">Neurosurgeon</h3>
+          <h4 class="designation">Orthopedic Doctor</h3>
             <button type="button" class="card-btn">View Profile</button>
         </div>
       </div>
       <div class="card-container">
         <div class="card-image">
-          <img src="/Images/experts/robert.jpg" alt="Robert Harvey">
+          <img src="/Images/experts/bary_jones.jpg" alt="Bary Jones">
         </div>
         <div class="card-content">
-          <h3 class="expert-name">Robert Harvey</h3>
-          <h4 class="designation">Engineer</h3>
+          <h3 class="expert-name">Bary Jones
+          </h3>
+          <h4 class="designation">Civil Engineer</h3>
             <button type="button" class="card-btn">View Profile</button>
         </div>
       </div>
@@ -171,99 +149,194 @@
             <button type="button" class="card-btn">View Profile</button>
         </div>
       </div>
+      <div class="card-container">
+        <div class="card-image">
+          <img src="/Images/experts/sara_saprovic.jpg" alt="Sara Saprović">
+        </div>
+        <div class="card-content">
+          <h3 class="expert-name">Sara Saprović</h3>
+          <h4 class="designation">Fashion Designer</h3>
+            <button type="button" class="card-btn">View Profile</button>
+        </div>
+      </div>
+      <div class="card-container">
+        <div class="card-image">
+          <img src="/Images/experts/matt_watson.jpg" alt="Matt Watson">
+        </div>
+        <div class="card-content">
+          <h3 class="expert-name">Matt Watson</h3>
+          <h4 class="designation">Cinematographer</h3>
+            <button type="button" class="card-btn">View Profile</button>
+        </div>
+      </div>
     </div>
-    <div class="btn">
-      <button type="button" class="action-btn">LOAD MORE</button>
-    </div>
+    <button type="button" class="cta-btn">LOAD MORE</button>
   </div>
+
+
+
+
+
+
+
+  <!-- Categories -->
+  <div id="categories" class="parent-div">
+    <h2 class="section-header">Browse by categories</h2>
+    <div class="categories">
+      <div class="categories-container">
+        <div class="category-image">
+          <img src="/Images/categories/agriculture.jpg" alt="agriculture">
+        </div>
+        <div class="category-text">
+          <p>Agriculture</p>
+        </div>
+      </div>
+      <div class="categories-container">
+        <div class="category-image">
+          <img src="/Images/categories/art.jpg" alt="art">
+        </div>
+        <div class="category-text">
+          <p>Art</p>
+        </div>
+      </div>
+      <div class="categories-container">
+        <div class="category-image">
+          <img src="/Images/categories/carpentry.jpg" alt="carpentry">
+        </div>
+        <div class="category-text">
+          <p>Carpentry</p>
+        </div>
+      </div>
+      <div class="categories-container">
+        <div class="category-image">
+          <img src="/Images/categories/construction.jpg" alt="Construction">
+        </div>
+        <div class="category-text">
+          <p>Construction</p>
+        </div>
+      </div>
+      <div class="categories-container">
+        <div class="category-image">
+          <img src="/Images/categories/engineering.jpg" alt="engineering">
+        </div>
+        <div class="category-text">
+          <p>Engineering</p>
+        </div>
+      </div>
+      <div class="categories-container">
+        <div class="category-image">
+          <img src="/Images/categories/medicine.jpg" alt="medicine">
+        </div>
+        <div class="category-text">
+          <p>Medicine</p>
+        </div>
+      </div>
+      <div class="categories-container">
+        <div class="category-image">
+          <img src="/Images/categories/teaching.jpg" alt="teaching">
+        </div>
+        <div class="category-text">
+          <p>Teaching</p>
+        </div>
+      </div>
+      <div class="categories-container">
+        <div class="category-image">
+          <img src="/Images/categories/technology.jpg" alt="technology">
+        </div>
+        <div class="category-text">
+          <p>Technology</p>
+        </div>
+      </div>
+    </div>
+    <button type="button" class="cta-btn">LOAD MORE</button>
+  </div>
+
+
+
+
+
+
 
   <!-- Testimonials -->
 
-  <div class="testimonials" id="testimonials">
-    <h2>Testimonials</h2>
-    <div class="testimonial">
-      <div class="testimonial-quote">
-        <blockquote class="quote">
-          “The platform was easy to use and allowed me to connect with several
-          experts who were highly skilled in my area. I was able to choose the one who best met my needs, and the
-          results
-          were outstanding."
-        </blockquote>
-        <h4>Lara White</h4>
+  <div id="testimonials" class="parent-div">
+    <h2 class="section-header">Words from the clients
+    </h2>
+    <div class="testimonials">
+      <div class="testimonial-container">
         <div class="testimonial-image">
-          <img src="/Images/testimonials/lora-white.jpg" alt="Lora White">
+          <img src="/Images/testimonials/katherine_johnson.jpg" alt="Katherine Johnson">
         </div>
+        <div class="title">
+          <h2>Katherine Johnson</h2>
+          <p>Marketing Executive
+          <p>
+        </div>
+        <blockquote class="quote">
+          "We really needed a marketing expert who could help us with our long awaited marketing campaign. Gladly we
+          stumbled upon Expertise Hub. We found the right expert we needed resulting in the drastic change in the amount
+          of our
+          sales."
+        </blockquote>
+      </div>
+      <div class="testimonial-container">
+        <div class="testimonial-image">
+          <img src="/Images/testimonials/mike_miller.jpg" alt="Mike Miller">
+        </div>
+        <div class="title">
+          <h2>Mike Miller</h2>
+          <p>College Sophomore
+          <p>
+        </div>
+        <blockquote class="quote">
+          "I really needed an expert to help me assist in some of the topics of my project that I didn't know much of.
+          Hopefully expertise hub was a life saver for me. I found the right experts at the right time who could assist
+          me
+          with their expertise."
+        </blockquote>
+      </div>
+      <div class="testimonial-container">
+        <div class="testimonial-image">
+          <img src="/Images/testimonials/scarlet_brown.jpg" alt="Scarlet Brown">
+        </div>
+        <div class="title">
+          <h2>Scarlet Brown</h2>
+          <p>Aspiring Software Engineer
+          <p>
+        </div>
+        <blockquote class="quote">
+          "Coders when they are starting out their coding journey run into errors and bugs every now and then. It's so
+          much frustrating and demotivating when you try for hours and still can't solve the issue. Luckily Expertise
+          Hub
+          has always been by my side."
+        </blockquote>
+      </div>
+      <div class="testimonial-container">
+        <div class="testimonial-image">
+          <img src="/Images/testimonials/stefan_stefancik.jpg" alt="Stefan Stefancik">
+        </div>
+        <div class="title">
+          <h2>Stefan Stefancik</h2>
+          <p>Guitarist
+          <p>
+        </div>
+        <blockquote class="quote">
+          "Although I've been playing for my band for about half a decade, there are times when I struggle to perform on
+          stages. Tips from musical experts from Expertise Hub has helped
+          overcome this fear and improve my
+          musical skills."
+        </blockquote>
       </div>
     </div>
-    <div class="testimonial">
-      <div class="testimonial-quote">
-        <blockquote class="quote">
-          “<span>Expertise Hub</span> was a lifesaver for me. I had a tight deadline for a project and needed someone
-          with
-          specific expertise to help me complete it on time. I was able to find the perfect expert quickly and easily
-          on the platform."
-        </blockquote>
-        <h4>Joseph Gonzalez</h4>
-        <div class="testimonial-image">
-          <img src="/Images/testimonials/joseph-gonzalez.jpg" alt="Joseph Gonzalez">
-        </div>
-      </div>
-    </div>
-    <div class="testimonial">
-      <div class="testimonial-quote">
-        <blockquote class="quote">
-          “<span>Expertise Hub</span> is an amazing platform that has helped me connect with experts in a wide range of
-          fields. I've been able to find people with the knowledge and experience I need to help me solve complex
-          problems, develop new skills, and achieve my goals."
-        </blockquote>
-        <h4>Brooke Cagle</h4>
-        <div class="testimonial-image">
-          <img src="/Images/testimonials/brooke-cagle.jpg" alt="Brooke Cagle">
-        </div>
-      </div>
-    </div>
-  </div>
+    <button type="button" class="cta-btn">LOAD MORE</button>
 
-  <!-- About us -->
-  <div class="about-us" id="about-us">
-    <h2>About us</h2>
-    <p>
-      Welcome to Expertise Hub, the go-to platform for individuals and
-      businesses to find and hire the experts they need. Our mission is to
-      connect you with top-tier professionals who can provide the knowledge,
-      experience, and support you need to achieve your goals. We understand
-      that finding the right expert can be a daunting and time-consuming
-      process, which is why we have created a platform that simplifies the
-      process and makes it easy for you to find the right expert for your
-      specific needs.
-    </p>
-    <p>
-      With a wide range of experts from various fields, you can be confident
-      that you will find the perfect match for your project. Our platform is
-      user-friendly, intuitive, and easy to navigate, so you can quickly and
-      easily browse through the profiles of our experts and find the right
-      person for your project. You can filter your search results based on
-      expertise, experience, ratings, and other relevant criteria, making it
-      easier for you to find the right expert.
-    </p>
-    <p>
-      At Expertise Hub, we are committed to providing our clients with
-      exceptional service, which is why we only work with experts who have
-      been thoroughly vetted and verified. Our experts are highly qualified,
-      experienced, and passionate about their work, and are dedicated to
-      providing the best possible service to our clients. Whether you need a
-      consultant, mentor, coach, or freelancer, we have the right expert for
-      you. We are committed to helping you achieve your goals and providing
-      you with the support you need to succeed. Thank you for choosing
-      Expertise Hub. We look forward to working with you and helping you find
-      the perfect expert for your needs.
-    </p>
   </div>
-
 
   <!-- Specialities -->
 
-  <div class="speciality">
+
+
+  <div class="speciality parent-div">
     <div class="speciality-content">
       <h3>A whole world of experts<br />at your fingertips</h3>
       <div class="links">
@@ -304,10 +377,10 @@
     </div>
   </div>
 
-  <!-- Sign up today -->
-  <div class="signup-today">
-    <h2>Sign up today. It's completely free!</h2>
-  </div>
+
+
+
+
 
   <!-- Footer -->
 
