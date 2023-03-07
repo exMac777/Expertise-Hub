@@ -20,7 +20,7 @@ body {
 }
 
 .background-blurrer {
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
     width: 100%;
     height: 100%;
     display: flex;
@@ -30,7 +30,8 @@ body {
 }
 
 #login-page,
-#signup-page {
+#signup-page,
+#password-reset-page {
     background: rgba(255, 255, 255, 0.1);
     /* outline: 1px solid red; */
     border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -46,7 +47,8 @@ body {
   }
   
   #login-page > img,
-  #signup-page {
+  #signup-page > img,
+  #password-reset-page > img {
     width: 80px;
     align-self: center;
     margin-bottom: 20px;
@@ -69,13 +71,66 @@ body {
     color: white;
   }
   
-  .form > input:nth-child(1) {
+
+  /* input field icons for login form */
+
+  .log-form > input:nth-child(1) {
     background-image: url("/images/login_page_icons/user_icon.svg");
   }
   
-  .form > input:nth-child(2) {
+  .log-form > input:nth-child(2) {
     background-image: url("/Images/login_page_icons/key_icon.svg");
   }
+
+
+  /* input field icons for client signup form */
+
+  .sign-form > input:nth-child(1) {
+    background-image: url("/images/login_page_icons/mail_icon.svg");
+  }
+
+  .sign-form > input:nth-child(2) {
+    background-image: url("/images/login_page_icons/user_icon.svg");
+  }
+
+  .sign-form > input:nth-child(3) {
+    background-image: url("/images/login_page_icons/key_icon.svg");
+  }
+  
+  .sign-form > input:nth-child(4) {
+    background-image: url("/images/login_page_icons/key_icon.svg");
+  }
+  
+
+  /* input field icons for expert signup form */
+
+  .sign-form-ex > input:nth-child(1) {
+    background-image: url("/images/login_page_icons/mail_icon.svg");
+  }
+  
+  .sign-form-ex > input:nth-child(2) {
+    background-image: url("/images/login_page_icons/phone_icon.svg");
+  }
+
+  .sign-form-ex > input:nth-child(3) {
+    background-image: url("/images/login_page_icons/user_icon.svg");
+  }
+
+  .sign-form-ex > input:nth-child(4) {
+    background-image: url("/images/login_page_icons/key_icon.svg");
+  }
+  
+  .sign-form-ex > input:nth-child(5) {
+    background-image: url("/images/login_page_icons/key_icon.svg");
+  }
+
+  /* input field icons for forgot password form */
+
+  .pass-reset > input:nth-child(1) {
+    background-image: url("/images/login_page_icons/mail_icon.svg");
+  }
+  
+  
   
   .form > input {
     background-repeat: no-repeat;
@@ -98,21 +153,15 @@ body {
   }
 
 
-  #login-page > a:link,
-  #login-page > a:visited,
-  .f-pass:link,
-  .f-pass:visited,
-  .reg-link a:link,
-  .reg-link a:visited {
+  .ls-links:link,
+  .ls-links:visited {
     color: #cad8fb;
     font-size: 14px;
     text-decoration: none;
     transition: color 200ms ease;
   }
 
-  #login-page > a:hover,
-  .f-pass:hover,
-  .reg-link a:hover {
+  .ls-links:hover {
     color: #7298f8;
   }
 
@@ -163,4 +212,23 @@ body {
   .reg-link a {
     display: block;
     margin: 10px 0 10px;
+  }
+
+  #signup-page > p {
+    color: white; 
+    font-size: 14px;
+    text-align: center;
+  }
+  #signup-page > a {
+    width: max-content;
+    margin: 20px auto 20px;
+    display: inline;
+  }
+
+  /* password reset page */
+
+  #password-reset-page > p {
+    margin-top: 20px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
   }
