@@ -390,7 +390,6 @@ body {
 
 
 
-
 /* Testimonials seciton begins here */
 
 .testimonials {
@@ -515,6 +514,7 @@ body {
   padding-left: 40px;
 }
 
+
 .spec-list > li:nth-child(1) {
   background: url("/images/icons/reward.svg");
   background-repeat: no-repeat;
@@ -556,6 +556,7 @@ body {
   flex-wrap: wrap;
   gap: 30px;
 }
+
 
 .footer,
 .footer *:link,
