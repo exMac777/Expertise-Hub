@@ -390,39 +390,54 @@ body {
 
 
 
+
 /* Testimonials seciton begins here */
 
-  .testimonials {
-    padding: 50px;
-  }
-  .testimonials h2 {
-    text-align: center;
-  }
-  .testimonials span {
-    color: rgb(248, 84, 19);
-  }
-  .testimonial {
-    margin: 100px 0;
-    display: flex;
-    align-items: center;
-  }
-  .testimonial-quote {
-    background: #fff;
-    text-align: center;
-    width: 100%;
-    min-width: 400px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px 230px 20px 20px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    position: relative;
-    color: var(--grey);
-  }
-  .testimonial-quote h4 {
-    margin: 20px 0;
-    color: #666;
-  }
+.testimonials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
+.testimonial-container {
+  padding: 20px 10px;
+  /* outline: 1px solid red; */
+  width: 300px;
+  aspect-ratio: 9 / 14;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 5px 30px;
+  overflow: hidden;
+  gap: 1em;
+  text-align: justify;
+  text-align-last: center;
+  position: relative;
+  box-shadow: 4px 4px 1px rgba(0, 0, 0, 0.3);
+}
+.testimonial-container::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  background-image: linear-gradient(rgba(133, 198, 236, 0.1), rgba(133, 198, 236, 0.1)), url("/images/testi_bg.jpg");
+  background-size: cover;
+  opacity: 0.3;
+  z-index: -1;
+  position: absolute;
+}
+.title > h2 {
+  font-size: 18px;
+}
+.title > p {
+  font-size: 14px;
+  font-weight: 100;
+}
+.quote {
+  font-size: 14px;
+  font-family: "poppins", sans-serif;
+}
 
 .testimonial-image {
   outline: 3px solid black;
@@ -444,9 +459,12 @@ body {
 
 
 
-
 /* Speciality section begins here */
 
+
+.specialities {
+  margin-bottom: 80px;
+}
 
 .specialities > h2 {
   text-align: center;
@@ -496,15 +514,10 @@ body {
   font-family: "poppins", sans-serif;
 }
 
-.exhub-text {
-  color: rgb(254, 123, 75);
-}
-
 .spec-list > li {
   list-style-type: none;
   padding-left: 40px;
 }
-
 
 .spec-list > li:nth-child(1) {
   background: url("/images/icons/reward.svg");
@@ -530,7 +543,10 @@ body {
     flex-direction: column;
   }
 }
-}
+
+
+
+
 
 
 
@@ -548,7 +564,6 @@ body {
   flex-wrap: wrap;
   gap: 30px;
 }
-
 
 .footer,
 .footer *:link,
@@ -593,63 +608,47 @@ body {
   filter: grayscale(0%) brightness(100%);
 }
 
-  /* Sign up today text */
+.contact > li {
+  padding-left: 20px;
+}
 
-  .signup-today {
-    width: 90%;
-    padding: 50px 0;
-    margin-inline: auto;
-    text-align: center;
-    color: var(--mild-text);
-    background-color: var(--light-grey);
-  }
+.contact > li:nth-child(1) {
+  background-image: url("/Images/footer_icons/house.svg");
+}
+.contact > li:nth-child(2) {
+  background-image: url("/Images/footer_icons/mail_icon.svg");
+}
+.contact > li:nth-child(3) {
+  background-image: url("/Images/footer_icons/phone.svg");
+}
+.contact > li {
+  background-repeat: no-repeat;
+  background-size: 12px;
+  background-position: 0 2px;
+}
 
-  /* Footer section */
+.ft-icons {
+  width: 12px;
+  height: auto;
+}
 
-  .footer {
-    overflow: hidden;
-    max-width: 90%;
-    background-color: #353835;
-    background-image: linear-gradient(to top left, rgb(70, 90, 79), #697355);
-    color: white;
-    margin: 0 auto 50px;
-    padding: 50px 0;
-    display: flex;
-    justify-content: space-evenly;
-    box-shadow: var(--normal-shadow);
-  }
-  ul {
-    list-style-type: none;
-  } 
-  .footer div h3 {
-    margin-bottom: 20px;
-  }
-  .footer-links li,
-  .footer-links li a:link,
-  .footer-links li a:visited  {
-    font-size: 12px;
-    color: white;
-  }
-  
-  div:not(.ft-social) .footer-links li a {
-    position: relative;
-  }
+.footer-links li a{
+  position: relative;
+}
 
-  div:not(.ft-social) .footer-links li a::after {
-    content: '';
-    width: 0;
-    height: 1.5px;
-    background: orangered;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    transition: width 300ms ease; 
-  }
-
-  div :not(.ft-social) .footer-links li:hover a::after {
-    width: 100%;
-    color: orangered;
-  }
+.footer-links li a::after {
+  content: "";
+  width: 0;
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  height: 1.2px;
+  background: white;
+  transition: width 300ms ease;
+}
+.footer-links li a:hover::after {
+  width: 100%;
+}
 
 #copyright {
   color: rgb(188, 188, 188);
@@ -659,34 +658,3 @@ body {
   text-align: center;
 }
 
-  .newsletter {
-    padding: 0 0 0 5px;
-    background: white;
-  }
-  .newsletter .email-input {
-    border: none;
-    outline: none;
-    background-color: transparent;
-  }
-  .newsletter .subscribe {
-    padding: 5px 10px;
-    height: 100%;
-    background: #ddd;
-    color: var(--mild-text);
-    border: none;
-    outline: none;
-    cursor: pointer;
-  }
-  ::placeholder {
-    color: var(--light-text);
-  }
-  @media (max-width:786px) {
-    .footer {
-      flex-wrap: wrap;
-      /* flex-direction: column; */
-      padding-left: 20px;
-    }
-    .footer div h3 {
-      margin: 20px 0 10px;
-    }
-  }
