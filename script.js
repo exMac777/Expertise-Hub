@@ -5,9 +5,9 @@ let isInputFocused = false;
 function setWidth() {
   const viewportWidth = window.innerWidth;
   if (viewportWidth >= 768) {
-    searchField.style.width = isInputFocused ? "50%" : "30%";
+    searchField.style.width = isInputFocused ? "60%" : "40%";
   } else {
-    searchField.style.width = "50%";
+    searchField.style.width = "90%";
   }
 }
 
@@ -24,3 +24,10 @@ searchInput.addEventListener("blur", () => {
   isInputFocused = false;
   setWidth(); // Call to update the width
 });
+
+const nameInput = document.getElementById("search");
+  nameInput.setCustomValidity("Please type what to search");
+
+  nameInput.addEventListener("input", function () {
+    nameInput.setCustomValidity("");
+  });

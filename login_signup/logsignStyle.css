@@ -37,7 +37,7 @@ body {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     border-right: 1px solid rgba(255, 255, 255, 0.4);
     border-radius: 3px;
-    width: min(70%, 500px);
+    width: min(70%, 400px);
     padding: 20px;
     margin-inline: auto;
     display: flex;
@@ -52,6 +52,7 @@ body {
     width: 80px;
     align-self: center;
     margin-bottom: 20px;
+
   }
   
   .logsign-header {

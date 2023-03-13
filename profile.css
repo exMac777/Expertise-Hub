@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&family=Oxygen:wght@300;400&family=Poppins:wght@100;200;300;400;500&family=Roboto:wght@100;300;400&display=swap');
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "inter", sans-serif;
+}
+
+body{
+    background-color: rgb(230, 229, 229);
+    padding: 10px 30px;
+    /* outline: 1px dashed red; */
+}
+
+.profile{
+    background-color: white;
+    margin-inline: auto;
+    width: min(600px, 80%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.profile-images {
+    width: 100%;
+    background: lightblue;
+    height: 250px;
+    position: relative;
+    margin-bottom: 120px;
+}
+
+.cover-img {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    /* outline: 1px solid hotpink; */
+    
+}
+.cover-img > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    aspect-ratio: 1;
+    background-color: firebrick;
+    border: 8px solid white;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+    transform: translateY( 50%);
+    overflow: hidden;
+
+}
+
+.profile-img > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.description {
+    /* text-align: center; */
+    margin-left: 20px;
+}
+
+.description > h1 {
+    font-size: 24px;
+    font-weight: 500;
+    color: rgb(63, 63, 63);
+}
+
+.description > h2 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(63, 63, 63);
+} 
+
+.description > h3 {
+    margin-top: 5px;
+    font-weight: 500;
+}
+
+.axn-btns {
+    margin-left: 20px;
+    /* outline: 1px solid blue; */
+}
+.axn-btns > button{
+    margin: 20px 5px 30px 0;
+    color: white;
+    background: black;
+    border-radius: 7px 2px;
+    padding: 3px 7px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.axn-btns > button:hover,
+.axn-btns > button:focus {
+    color: black;
+    background: white;
+    outline: 1px solid black;
+    outline-offset: -1px;
+}
+
+.prof-socials {
+    position: absolute;
+    bottom: 10px;
+    left: 45%;
+    display: flex;
+    gap: 10px;
+}
+.prof-social-logo {
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 25px;
+    transition: all 300ms ease;
+}
+.prof-social-logo:hover,
+.prof-social-logo:focus {
+    filter: brightness(80%);
+}

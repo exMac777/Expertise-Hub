@@ -37,9 +37,9 @@
   <div class="topmost">
 
     <nav class="top-nav">
-      <img src="Exhub_logo.png" alt="logo" class="main-logo">
+      <img src="/Exhub_logo.png" alt="logo" class="main-logo">
       <div class="nav-links">
-        <a href="#" class="nav-link">Home</a>
+        <a href="/index.html" class="nav-link">Home</a>
         <a href="#experts" class="nav-link">Experts</a>
         <a href="#categories" class="nav-link">Categories</a>
         <a href="#testimonials" class="nav-link">Testimonials</a>
@@ -47,7 +47,8 @@
         <a href="/blogs.html" class="nav-link">Blogs</a>
       </div>
       <div class="log-sign">
-        <button type="button" class="button login">LOGIN</button>
+        <button type="button" class="button login"
+          onclick="window.location.href='login_signup/login.html'">LOGIN</button>
       </div>
     </nav>
 
@@ -55,7 +56,7 @@
 
     <form action="https://google.com/search" method="get" class="search-field">
       <img src="search-icon.png" alt="Search icon" class="search-icon">
-      <input class="field" type="search" placeholder="e.g. Fashion Designing" name="q" />
+      <input class="field" type="search" placeholder="e.g. Fashion Designing" id="search" name="q" required />
       <button type="submit" class="submit-btn">Browse</button>
     </form>
 
@@ -65,7 +66,7 @@
   <!-- Hero  image-->
 
   <div class="hero">
-    <img src="/Images/hero-image.jpg" alt="Hero image" class="hero-image">
+    <img src="/Images/ex_hub_bg.jpg" alt="Hero image" class="hero-image">
   </div>
 
 
@@ -115,7 +116,7 @@
         <div class="card-content">
           <h3 class="expert-name">Anna Yevette</h3>
           <h4 class="designation">Orthopedic Doctor</h3>
-            <button type="button" class="card-btn">View Profile</button>
+            <button type="button" onclick="window.location.href='profile.html'" class="card-btn">View Profile</button>
         </div>
       </div>
       <div class="card-container">
